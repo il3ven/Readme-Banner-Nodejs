@@ -12,7 +12,7 @@ const renderBanner = () => {
     const text = strings[getRandomInt(strings.length)]
 
     return `
-    <svg xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
         <style>
             .typing {
                 animation: type 3s steps(${text.length});
