@@ -16,9 +16,7 @@ const renderBanner = () => {
         fill="none"
         width="300" height="200"
         viewBox="0 0 300 200"
-        version="1.1" xmlns="http://www.w3.org/2000/svg" 
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns="http://www.w3.org/2000/svg"
     >
         <style>
             .typing {
@@ -42,7 +40,7 @@ const renderBanner = () => {
         </style>
 
         <foreignObject x="0" y="0" width="100%" height="50">
-            <h1 class="typing">${text}</h1>
+            <h1 class="typing" xmlns="http://www.w3.org/1999/xhtml">${text}</h1>
         </foreignObject>
     </svg>
     `
