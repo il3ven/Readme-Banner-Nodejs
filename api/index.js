@@ -1,4 +1,4 @@
-const renderBanner = require('../src/renderBanner')
+const renderBanner = require('../src/renderTest')
 
 module.exports = (req, res) => {
     res.setHeader("Cache-Control", "public, max-age=1800")
