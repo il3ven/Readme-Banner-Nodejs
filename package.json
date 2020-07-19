@@ -1,0 +1,12 @@
+{
+  "name": "readme-banner-nodejs",
+  "version": "1.0.0",
+  "description": "API for serving a banner which is rendered through SVG",
+  "main": "index.js",
+  "author": "il3ven",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "express": "^4.17.1"
+  }
+}
