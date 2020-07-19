@@ -38,7 +38,10 @@ const renderBanner = () => {
         </style>
 
         <foreignObject x="0" y="0" width="800" height="160">
-            <h1 class="typing">${text}</h1>
+            Hello
+            <div>
+                <p>World</p>
+            </div>
         </foreignObject>
     </svg>
     `
