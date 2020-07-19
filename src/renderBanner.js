@@ -4,8 +4,8 @@ const strings = [
     "Hey you, Can you feel me?"
 ]
 
-const BANNER_WIDTH = 100
-const BANNER_HEIGHT = 30
+const BANNER_WIDTH = "100%"
+const BANNER_HEIGHT = "30px"
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
@@ -17,8 +17,8 @@ const renderBanner = () => {
     return `
     <svg
         fill="none"
-        width="${BANNER_HEIGHT}%" height="${BANNER_HEIGHT}"
-        viewBox="0 0 ${BANNER_HEIGHT}% ${BANNER_HEIGHT}"
+        width="${BANNER_WIDTH}" height="${BANNER_HEIGHT}"
+        viewBox="0 0 ${BANNER_WIDTH} ${BANNER_HEIGHT}"
         xmlns="http://www.w3.org/2000/svg"
     >
         <style>
@@ -42,7 +42,7 @@ const renderBanner = () => {
             }
         </style>
 
-        <foreignObject x="0" y="0" width="100%" height="${BANNER_HEIGHT}">
+        <foreignObject x="0" y="0" width="${BANNER_WIDTH}" height="${BANNER_HEIGHT}">
             <h1 class="typing" xmlns="http://www.w3.org/1999/xhtml">${text}</h1>
         </foreignObject>
     </svg>
