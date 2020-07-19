@@ -12,10 +12,14 @@ const renderBanner = () => {
     const text = strings[getRandomInt(strings.length)]
 
     return `
-    <svg version="1.1"
-        baseProfile="full"
+    <svg
+        fill="none"
         width="300" height="200"
-        xmlns="http://www.w3.org/2000/svg">
+        viewBox="0 0 300 200"
+        version="1.1" xmlns="http://www.w3.org/2000/svg" 
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    >
         <style>
             .typing {
                 animation: type 3s steps(${text.length});
@@ -37,7 +41,7 @@ const renderBanner = () => {
             }
         </style>
 
-        <foreignObject x="0" y="0" width="800" height="160">
+        <foreignObject x="0" y="0" width="100%" height="50">
             <xhtml:h1 class="typing">${text}</xhtml:h1>
         </foreignObject>
     </svg>
