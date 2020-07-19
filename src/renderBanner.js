@@ -24,7 +24,7 @@ const renderBanner = () => {
         <style>
             .typing {
                 animation: type 3s steps(${text.length});
-                font: 18px serif;
+                font: 22px;
                 overflow: hidden;
                 white-space: nowrap;
                 border-right: 2px solid black;
