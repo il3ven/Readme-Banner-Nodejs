@@ -10,4 +10,4 @@ const renderBanner = () => {
     `
 }
 
-module.exports = renderBanner()
+module.exports = renderBanner
