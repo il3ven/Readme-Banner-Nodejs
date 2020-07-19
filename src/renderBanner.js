@@ -5,7 +5,7 @@ const strings = [
 ]
 
 const BANNER_WIDTH = "100%"
-const BANNER_HEIGHT = "30px"
+const BANNER_HEIGHT = "40px"
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
@@ -24,7 +24,7 @@ const renderBanner = () => {
         <style>
             .typing {
                 animation: type 3s steps(${text.length});
-                font: 22px;
+                font: 18px sans-serif;
                 overflow: hidden;
                 white-space: nowrap;
                 border-right: 2px solid black;
@@ -42,7 +42,7 @@ const renderBanner = () => {
             }
         </style>
 
-        <foreignObject x="0" y="0" width="${BANNER_WIDTH}" height="${BANNER_HEIGHT}">
+        <foreignObject x="0" y="0%" width="${BANNER_WIDTH}" height="${BANNER_HEIGHT}">
             <h1 class="typing" xmlns="http://www.w3.org/1999/xhtml">${text}</h1>
         </foreignObject>
     </svg>
