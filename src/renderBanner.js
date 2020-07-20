@@ -1,7 +1,8 @@
 const strings = [
-    "Welcome! Stay as long as you want.",
-    "I have become comfortably numb.",
-    "Hey you, Can you feel me?"
+    "Hi, I am il3ven (Eleven). Nice of you to come hang out.",
+    "Welcome! Delighted to see you.",
+    "Hi, You fantastic creature.",
+    "Hey you, Did you know ? You are awesome"
 ]
 
 const BANNER_WIDTH = "100%"
@@ -24,7 +25,7 @@ const renderBanner = () => {
         <style>
             .typing {
                 animation: type 3s steps(${text.length});
-                font: 18px sans-serif;
+                font: bold 18px sans-serif;
                 overflow: hidden;
                 white-space: nowrap;
                 border-right: 2px solid black;
