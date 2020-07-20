@@ -6,7 +6,7 @@ const strings = [
 ]
 
 const BANNER_WIDTH = "100%"
-const BANNER_HEIGHT = "40px"
+const BANNER_HEIGHT = "36px"
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
@@ -43,6 +43,7 @@ const renderBanner = () => {
             }
         </style>
 
+        <rect x="0" y="0%" width="${BANNER_WIDTH}" height="${BANNER_HEIGHT}" fill="white" rx="4.5"/>
         <foreignObject x="0" y="0%" width="${BANNER_WIDTH}" height="${BANNER_HEIGHT}">
             <h1 class="typing" xmlns="http://www.w3.org/1999/xhtml">${text}</h1>
         </foreignObject>
