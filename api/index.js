@@ -1,7 +1,7 @@
 const renderBanner = require('../src/renderBanner')
 
 module.exports = (req, res) => {
-    res.setHeader("Cache-Control", "max-age=1, no-cache, no-store, stale-while-revalidate")
+    res.setHeader("Cache-Control", "max-age=1, stale-while-revalidate")
     res.setHeader("Content-Type", "image/svg+xml")
     res.send(renderBanner())
 }

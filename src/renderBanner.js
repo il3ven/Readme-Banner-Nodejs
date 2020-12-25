@@ -30,7 +30,7 @@ const renderBanner = () => {
                 font: bold 18px 'Courier New', sans-serif;
                 overflow: hidden;
                 white-space: nowrap;
-                border-right: 2px solid #000000;
+                border-right: 2px solid #FFFFFF;
                 display: table-caption;
                 color: #D3D7CF;
                 margin: 0;
