@@ -25,11 +25,16 @@ const renderBanner = () => {
         <style>
             .typing {
                 animation: type 3s steps(${text.length});
-                font: bold 18px sans-serif;
+                font: bold 18px 'Courier New', sans-serif;
                 overflow: hidden;
                 white-space: nowrap;
                 border-right: 2px solid black;
                 display: table-caption;
+                color: #13A10E;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
             }
 
             @keyframes type {
@@ -43,8 +48,9 @@ const renderBanner = () => {
             }
         </style>
 
-        <rect x="0" y="0%" width="${BANNER_WIDTH}" height="${BANNER_HEIGHT}" fill="white" rx="4.5"/>
-        <foreignObject x="0" y="0%" width="${BANNER_WIDTH}" height="${BANNER_HEIGHT}">
+
+        <rect x="0" y="0%" width="${BANNER_WIDTH}" height="${BANNER_HEIGHT}" fill="#0C0C0C" rx="0"/>
+        <foreignObject x="10px" y="0" width="${BANNER_WIDTH}" height="${BANNER_HEIGHT}">
             <h1 class="typing" xmlns="http://www.w3.org/1999/xhtml">${text}</h1>
         </foreignObject>
     </svg>
