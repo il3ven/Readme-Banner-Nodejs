@@ -32,7 +32,7 @@ const renderBanner = () => {
                 white-space: nowrap;
                 border-right: 2px solid #000000;
                 display: table-caption;
-                color: #3465A4;
+                color: #D3D7CF;
                 margin: 0;
             }
 
@@ -48,7 +48,7 @@ const renderBanner = () => {
         </style>
 
 
-        <rect x="0" y="0%" width="${BANNER_WIDTH}" height="${BANNER_HEIGHT}" fill="#D3D7CF" rx="0"/>
+        <rect x="0" y="0%" width="${BANNER_WIDTH}" height="${BANNER_HEIGHT}" fill="#000000" rx="0"/>
         <foreignObject x="10px" y="8px" width="${BANNER_WIDTH}" height="${BANNER_HEIGHT}">
             <h1 class="typing" xmlns="http://www.w3.org/1999/xhtml">${text}</h1>
         </foreignObject>
